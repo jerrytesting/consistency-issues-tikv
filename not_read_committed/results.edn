@@ -1,0 +1,1327 @@
+{:perf {:latency-graph {:valid? true},
+        :rate-graph {:valid? true},
+        :valid? true},
+ :workload {:valid? false,
+            :anomaly-types (:G1a :dirty-update),
+            :anomalies {:G1a ({:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:append 2610 17]
+                                            [:r 2642 [1 2 3 6]]],
+                                    :time 842988518410,
+                                    :process 2641,
+                                    :index 228885},
+                               :mop [:r 2642 [1 2 3 6]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r 2642 [1 2 3 6 8 9]]],
+                                    :time 843033654453,
+                                    :process 2557,
+                                    :index 228897},
+                               :mop [:r 2642 [1 2 3 6 8 9]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r 2642 [1 2 3 6 8 9]]],
+                                    :time 843186041993,
+                                    :process 2603,
+                                    :index 228923},
+                               :mop [:r 2642 [1 2 3 6 8 9]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r 2642 [1 2 3 6 8 9 10]]],
+                                    :time 843215761599,
+                                    :process 2557,
+                                    :index 228929},
+                               :mop [:r 2642 [1 2 3 6 8 9 10]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2643
+                                             [1 2 4 5 7 8 11 15]]
+                                            [:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18]]],
+                                    :time 843688308530,
+                                    :process 2439,
+                                    :index 229017},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18]]],
+                                    :time 843726098945,
+                                    :process 2603,
+                                    :index 229023},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2643
+                                             [1
+                                              2
+                                              4
+                                              5
+                                              7
+                                              8
+                                              11
+                                              15
+                                              17
+                                              20
+                                              22
+                                              25
+                                              28]]
+                                            [:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20]]],
+                                    :time 844058803779,
+                                    :process 2557,
+                                    :index 229081},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20]]
+                                            [:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20]]],
+                                    :time 844065677436,
+                                    :process 2557,
+                                    :index 229083},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20]]
+                                            [:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20]]],
+                                    :time 844065677436,
+                                    :process 2557,
+                                    :index 229083},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20]]
+                                            [:r 2645 []]],
+                                    :time 844079219684,
+                                    :process 2439,
+                                    :index 229088},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22]]],
+                                    :time 844196217464,
+                                    :process 2603,
+                                    :index 229111},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26]]
+                                            [:r
+                                             2644
+                                             [1
+                                              4
+                                              7
+                                              9
+                                              10
+                                              12
+                                              13
+                                              16
+                                              17
+                                              19
+                                              20
+                                              21
+                                              25]]],
+                                    :time 844363874328,
+                                    :process 2439,
+                                    :index 229153},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26]]],
+                                    :time 844395784231,
+                                    :process 2603,
+                                    :index 229159},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26]]],
+                                    :time 844485384664,
+                                    :process 2560,
+                                    :index 229183},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26]]],
+                                    :time 844525430075,
+                                    :process 2557,
+                                    :index 229199},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2645
+                                             [2 3 5 9 11 13 16]]
+                                            [:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26
+                                              28]]],
+                                    :time 844623528198,
+                                    :process 2557,
+                                    :index 229223},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26
+                                      28]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26
+                                              28
+                                              29]]],
+                                    :time 844686134904,
+                                    :process 2557,
+                                    :index 229239},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26
+                                      28
+                                      29]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26
+                                              28
+                                              29]]
+                                            [:append 2642 30]],
+                                    :time 844819458109,
+                                    :process 2560,
+                                    :index 229256},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26
+                                      28
+                                      29]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2645
+                                             [2 3 5 9 11 13 16 18 20]]
+                                            [:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26
+                                              28
+                                              29
+                                              30]]],
+                                    :time 844829793262,
+                                    :process 2557,
+                                    :index 229261},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26
+                                      28
+                                      29
+                                      30]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26
+                                              28
+                                              29
+                                              30]]],
+                                    :time 844895116783,
+                                    :process 2641,
+                                    :index 229279},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26
+                                      28
+                                      29
+                                      30]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26
+                                              28
+                                              29
+                                              30
+                                              31]]
+                                            [:r 2647 []]],
+                                    :time 845020872231,
+                                    :process 2603,
+                                    :index 229305},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26
+                                      28
+                                      29
+                                      30
+                                      31]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:append 2647 4]
+                                            [:r
+                                             2642
+                                             [1
+                                              2
+                                              3
+                                              6
+                                              8
+                                              9
+                                              10
+                                              12
+                                              13
+                                              15
+                                              16
+                                              17
+                                              18
+                                              20
+                                              22
+                                              23
+                                              25
+                                              26
+                                              28
+                                              29
+                                              30
+                                              31]]],
+                                    :time 845108846537,
+                                    :process 2560,
+                                    :index 229327},
+                               :mop [:r
+                                     2642
+                                     [1
+                                      2
+                                      3
+                                      6
+                                      8
+                                      9
+                                      10
+                                      12
+                                      13
+                                      15
+                                      16
+                                      17
+                                      18
+                                      20
+                                      22
+                                      23
+                                      25
+                                      26
+                                      28
+                                      29
+                                      30
+                                      31]],
+                               :writer {:type :fail,
+                                        :f :txn,
+                                        :value [[:append 2642 3]],
+                                        :time 841726569139,
+                                        :process 2439,
+                                        :error :conflict,
+                                        :index 228838},
+                               :element 3}),
+                        :dirty-update ({:key 2642,
+                                        :values [3 6],
+                                        :txns [{:type :fail,
+                                                :f :txn,
+                                                :value [[:append
+                                                         2642
+                                                         3]],
+                                                :time 841726569139,
+                                                :process 2439,
+                                                :error :conflict,
+                                                :index 228838}
+                                               ...
+                                               {:type :ok,
+                                                :f :txn,
+                                                :value [[:append
+                                                         2642
+                                                         6]],
+                                                :time 842749277529,
+                                                :process 2560,
+                                                :index 228845}]})},
+            :not #{:read-atomic :read-committed},
+            :also-not #{:ROLA
+                        :causal-cerone
+                        :consistent-view
+                        :cursor-stability
+                        :forward-consistent-view
+                        :monotonic-atomic-view
+                        :monotonic-snapshot-read
+                        :monotonic-view
+                        :parallel-snapshot-isolation
+                        :prefix
+                        :repeatable-read
+                        :serializable
+                        :snapshot-isolation
+                        :strong-serializable
+                        :strong-session-serializable
+                        :strong-session-snapshot-isolation
+                        :strong-snapshot-isolation
+                        :update-serializable}},
+ :exceptions {:valid? true,
+              :exceptions ({:count 2553,
+                            :class clojure.lang.ExceptionInfo,
+                            :example {:type :info,
+                                      :f :txn,
+                                      :value [[:r 133 nil]],
+                                      :time 124792245232,
+                                      :process 0,
+                                      :exception {:via [{:type clojure.lang.ExceptionInfo,
+                                                         :message "throw+: {:type :undetermined, :message \"tikv transaction get failed: Grpc(RpcFailure(RpcStatus { status: 14-UNAVAILABLE, details: Some(\\\"Connection reset by peer\\\") }))\"}",
+                                                         :data {:type :undetermined,
+                                                                :message "tikv transaction get failed: Grpc(RpcFailure(RpcStatus { status: 14-UNAVAILABLE, details: Some(\"Connection reset by peer\") }))"},
+                                                         :at [slingshot.support$stack_trace
+                                                              invoke
+                                                              "support.clj"
+                                                              201]}],
+                                                  :trace [[slingshot.support$stack_trace
+                                                           invoke
+                                                           "support.clj"
+                                                           201]
+                                                          [jepsen.tikv.client.txn$get
+                                                           invokeStatic
+                                                           "txn.clj"
+                                                           73]
+                                                          [jepsen.tikv.client.txn$get
+                                                           invoke
+                                                           "txn.clj"
+                                                           67]
+                                                          [jepsen.tikv.list_append$get
+                                                           invokeStatic
+                                                           "list_append.clj"
+                                                           19]
+                                                          [jepsen.tikv.list_append$get
+                                                           invoke
+                                                           "list_append.clj"
+                                                           17]
+                                                          [jepsen.tikv.list_append$mop_BANG_
+                                                           invokeStatic
+                                                           "list_append.clj"
+                                                           27]
+                                                          [jepsen.tikv.list_append$mop_BANG_
+                                                           invoke
+                                                           "list_append.clj"
+                                                           23]
+                                                          [clojure.core$partial$fn__5841
+                                                           invoke
+                                                           "core.clj"
+                                                           2631]
+                                                          [clojure.core$mapv$fn__8445
+                                                           invoke
+                                                           "core.clj"
+                                                           6912]
+                                                          [clojure.lang.PersistentVector
+                                                           reduce
+                                                           "PersistentVector.java"
+                                                           343]
+                                                          [clojure.core$reduce
+                                                           invokeStatic
+                                                           "core.clj"
+                                                           6827]
+                                                          [clojure.core$mapv
+                                                           invokeStatic
+                                                           "core.clj"
+                                                           6903]
+                                                          [clojure.core$mapv
+                                                           invoke
+                                                           "core.clj"
+                                                           6903]
+                                                          [jepsen.tikv.list_append.Client$fn__6636$fn__6637
+                                                           invoke
+                                                           "list_append.clj"
+                                                           45]
+                                                          [jepsen.tikv.list_append.Client$fn__6636
+                                                           invoke
+                                                           "list_append.clj"
+                                                           44]
+                                                          [jepsen.tikv.list_append.Client
+                                                           invoke_BANG_
+                                                           "list_append.clj"
+                                                           42]
+                                                          [jepsen.client.Validate
+                                                           invoke_BANG_
+                                                           "client.clj"
+                                                           83]
+                                                          [jepsen.generator.interpreter.ClientWorker
+                                                           invoke_BANG_
+                                                           "interpreter.clj"
+                                                           64]
+                                                          [jepsen.generator.interpreter$spawn_worker$fn__13478$fn__13479
+                                                           invoke
+                                                           "interpreter.clj"
+                                                           139]
+                                                          [jepsen.generator.interpreter$spawn_worker$fn__13478
+                                                           invoke
+                                                           "interpreter.clj"
+                                                           122]
+                                                          [clojure.core$binding_conveyor_fn$fn__5754
+                                                           invoke
+                                                           "core.clj"
+                                                           2030]
+                                                          [clojure.lang.AFn
+                                                           call
+                                                           "AFn.java"
+                                                           18]
+                                                          [java.util.concurrent.FutureTask
+                                                           run
+                                                           "FutureTask.java"
+                                                           264]
+                                                          [java.util.concurrent.ThreadPoolExecutor
+                                                           runWorker
+                                                           "ThreadPoolExecutor.java"
+                                                           1128]
+                                                          [java.util.concurrent.ThreadPoolExecutor$Worker
+                                                           run
+                                                           "ThreadPoolExecutor.java"
+                                                           628]
+                                                          [java.lang.Thread
+                                                           run
+                                                           "Thread.java"
+                                                           829]],
+                                                  :cause "throw+: {:type :undetermined, :message \"tikv transaction get failed: Grpc(RpcFailure(RpcStatus { status: 14-UNAVAILABLE, details: Some(\\\"Connection reset by peer\\\") }))\"}",
+                                                  :data {:type :undetermined,
+                                                         :message "tikv transaction get failed: Grpc(RpcFailure(RpcStatus { status: 14-UNAVAILABLE, details: Some(\"Connection reset by peer\") }))"}},
+                                      :error "indeterminate: throw+: {:type :undetermined, :message \"tikv transaction get failed: Grpc(RpcFailure(RpcStatus { status: 14-UNAVAILABLE, details: Some(\\\"Connection reset by peer\\\") }))\"}",
+                                      :index 11370}}
+                           {:count 9,
+                            :class java.util.concurrent.ExecutionException,
+                            :example {:type :info,
+                                      :f :txn,
+                                      :value [[:append 567 29]],
+                                      :time 304817150297,
+                                      :process 1498,
+                                      :exception {:via [{:type java.util.concurrent.ExecutionException,
+                                                         :message "clojure.lang.ExceptionInfo: Unexpected disconnect receiving response {:response {:error {:type :timeout, :error #error {\n :cause \"Idle timeout expired: 30001/30000 ms\"\n :via\n [{:type java.util.concurrent.TimeoutException\n   :message \"Idle timeout expired: 30001/30000 ms\"\n   :at [org.eclipse.jetty.io.IdleTimeout checkIdleTimeout \"IdleTimeout.java\" 171]}]\n :trace\n [[org.eclipse.jetty.io.IdleTimeout checkIdleTimeout \"IdleTimeout.java\" 171]\n  [org.eclipse.jetty.io.IdleTimeout idleCheck \"IdleTimeout.java\" 113]\n  [java.util.concurrent.Executors$RunnableAdapter call \"Executors.java\" 515]\n  [java.util.concurrent.FutureTask run \"FutureTask.java\" 264]\n  [java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask run \"ScheduledThreadPoolExecutor.java\" 304]\n  [java.util.concurrent.ThreadPoolExecutor runWorker \"ThreadPoolExecutor.java\" 1128]\n  [java.util.concurrent.ThreadPoolExecutor$Worker run \"ThreadPoolExecutor.java\" 628]\n  [java.lang.Thread run \"Thread.java\" 829]]}}}}",
+                                                         :at [java.util.concurrent.CompletableFuture
+                                                              reportGet
+                                                              "CompletableFuture.java"
+                                                              395]}
+                                                        {:type clojure.lang.ExceptionInfo,
+                                                         :message "Unexpected disconnect receiving response",
+                                                         :data {:response {:error {:type :timeout,
+                                                                                   :error #object[java.util.concurrent.TimeoutException
+                                                                                                  "0x5d19dfb0"
+                                                                                                  "java.util.concurrent.TimeoutException: Idle timeout expired: 30001/30000 ms"]}}},
+                                                         :at [protojure.internal.grpc.client.providers.http2.core$receive_headers$fn__4297$fn__4333$state_machine__5651__auto____4340$fn__4342
+                                                              invoke
+                                                              "core.clj"
+                                                              65]}],
+                                                  :trace [[protojure.internal.grpc.client.providers.http2.core$receive_headers$fn__4297$fn__4333$state_machine__5651__auto____4340$fn__4342
+                                                           invoke
+                                                           "core.clj"
+                                                           65]
+                                                          [protojure.internal.grpc.client.providers.http2.core$receive_headers$fn__4297$fn__4333$state_machine__5651__auto____4340
+                                                           invoke
+                                                           "core.clj"
+                                                           59]
+                                                          [clojure.core.async.impl.ioc_macros$run_state_machine
+                                                           invokeStatic
+                                                           "ioc_macros.clj"
+                                                           978]
+                                                          [clojure.core.async.impl.ioc_macros$run_state_machine
+                                                           invoke
+                                                           "ioc_macros.clj"
+                                                           977]
+                                                          [clojure.core.async.impl.ioc_macros$run_state_machine_wrapped
+                                                           invokeStatic
+                                                           "ioc_macros.clj"
+                                                           982]
+                                                          [clojure.core.async.impl.ioc_macros$run_state_machine_wrapped
+                                                           invoke
+                                                           "ioc_macros.clj"
+                                                           980]
+                                                          [clojure.core.async.impl.ioc_macros$take_BANG_$fn__5669
+                                                           invoke
+                                                           "ioc_macros.clj"
+                                                           991]
+                                                          [clojure.core.async.impl.channels.ManyToManyChannel$fn__489$fn__490
+                                                           invoke
+                                                           "channels.clj"
+                                                           95]
+                                                          [clojure.lang.AFn
+                                                           run
+                                                           "AFn.java"
+                                                           22]
+                                                          [java.util.concurrent.ThreadPoolExecutor
+                                                           runWorker
+                                                           "ThreadPoolExecutor.java"
+                                                           1128]
+                                                          [java.util.concurrent.ThreadPoolExecutor$Worker
+                                                           run
+                                                           "ThreadPoolExecutor.java"
+                                                           628]
+                                                          [clojure.core.async.impl.concurrent$counted_thread_factory$reify__392$fn__393
+                                                           invoke
+                                                           "concurrent.clj"
+                                                           29]
+                                                          [clojure.lang.AFn
+                                                           run
+                                                           "AFn.java"
+                                                           22]
+                                                          [java.lang.Thread
+                                                           run
+                                                           "Thread.java"
+                                                           829]],
+                                                  :cause "Unexpected disconnect receiving response",
+                                                  :data {:response {:error {:type :timeout,
+                                                                            :error #object[java.util.concurrent.TimeoutException
+                                                                                           "0x5d19dfb0"
+                                                                                           "java.util.concurrent.TimeoutException: Idle timeout expired: 30001/30000 ms"]}}}},
+                                      :error "indeterminate: Unexpected disconnect receiving response",
+                                      :index 48795}})},
+ :assert {:valid? true, :count 0, :matches ()},
+ :valid? false}
